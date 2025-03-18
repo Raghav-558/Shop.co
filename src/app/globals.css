@@ -1,3 +1,46 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "IntegralCF";
+  font-weight: 700;
+  src: url("/public/assets/fonts/integral-cf/Fontspring-DEMO-integralcf-bold.otf");
+}
 
+@font-face {
+  font-family: "Satoshi";
+  font-weight: 400;
+  src: url("/public/assets/fonts/satoshi/Satoshi-Regular.otf");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-weight: 500;
+  src: url("/public/assets/fonts/satoshi/Satoshi-Regular.otf");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-weight: 700;
+  src: url("/public/assets/fonts/satoshi/Satoshi-Bold.otf");
+}
+
+* {
+  font-family: "Satoshi", sans-serif;
+}
+
+.font-intergal {
+  font-family: "IntegralCF", "sans-serif";
+}
+
+@theme {
+  --color-custom-gray: #f0f0f0;
+}
+
+.footer-icon:hover svg {
+  fill: white !important;
+}
+
+.payment-company-images {
+  box-shadow: 0px 0.45px 4.48px 0px #b7b7b714;
+  box-shadow: 0px 4.48px 8.96px 0px #b7b7b714;
+}

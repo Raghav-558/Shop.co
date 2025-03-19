@@ -28,7 +28,7 @@
   font-family: "Satoshi", sans-serif;
 }
 
-.font-intergal {
+.font-integral {
   font-family: "IntegralCF", "sans-serif";
 }
 
@@ -44,4 +44,8 @@
 .payment-company-images {
   box-shadow: 0px 0.45px 4.48px 0px #b7b7b714;
   box-shadow: 0px 4.48px 8.96px 0px #b7b7b714;
+}
+
+.footer-custom-bg{
+  background: linear-gradient(180deg, rgba(255,255,255,1) 15%, rgba(240,240,240,1) 15%);
 }

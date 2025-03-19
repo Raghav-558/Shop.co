@@ -17,7 +17,7 @@ const Hero = () => {
     <div className="bg-custom-gray overflow-hidden">
       <div className="max-w-[1240px] mx-auto max-xl:pl-4 max-lg:pl-0 pt-[103px] max-sm:pt-10 max-md:pt-20 max-lg:pt-24 lg:pb-[116px] relative">
         <div className="max-w-[577px] max-lg:px-4 max-lg:max-w-none relative z-20">
-          <h1 className="font-intergal font-bold leading-[100%] text-[64px] max-lg:text-6xl max-md:text-5xl max-sm:text-4xl">
+          <h1 className="font-integral font-bold leading-[100%] text-[64px] max-lg:text-6xl max-md:text-5xl max-sm:text-4xl">
             FIND CLOTHES THAT MATCHES YOUR STYLE
           </h1>
           <Description

@@ -3,7 +3,7 @@ import { DETAILS_TABS_LIST } from "@/utils/helper";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import React from "react";
-import ReviewsData from "../common/Reviews";
+import ReviewsData from "../common/ReviewsData";
 
 const Reviews = () => {
   const searchParams = useSearchParams();

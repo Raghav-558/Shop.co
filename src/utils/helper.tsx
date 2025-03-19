@@ -1,4 +1,15 @@
-import { FiveStarIcon, FourHalfStarIcon, FourStarIcon, ThreeHalfStarIcon, ThreeStarIcon } from "./icons";
+import {
+  FacebookIcon,
+  FiveStarIcon,
+  FourHalfStarIcon,
+  FourStarIcon,
+  GithubIcon,
+  GreenCheckedIcon,
+  InstagramIcon,
+  ThreeHalfStarIcon,
+  ThreeStarIcon,
+  TwitterIcon,
+} from "./icons";
 
 export const HEADER_LIST = [
   {
@@ -142,6 +153,78 @@ export const TOP_SELLING_LIST: ItemsList[] = [
   },
 ];
 
+export const HAPPY_CUSTOMERS_LIST = [
+  {
+    rating: <FiveStarIcon />,
+    name: "Sarah M.",
+    icon: <GreenCheckedIcon />,
+    description:
+      "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”",
+  },
+  {
+    rating: <FiveStarIcon />,
+    name: "Alex K.",
+    icon: <GreenCheckedIcon />,
+    description:
+      "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”",
+  },
+  {
+    rating: <FiveStarIcon />,
+    name: "James L.",
+    icon: <GreenCheckedIcon />,
+    description:
+      "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”",
+  },
+  {
+    rating: <FiveStarIcon />,
+    name: "Sarah M.",
+    icon: <GreenCheckedIcon />,
+    description:
+      "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”",
+  },
+  {
+    rating: <FiveStarIcon />,
+    name: "Alex K.",
+    icon: <GreenCheckedIcon />,
+    description:
+      "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”",
+  },
+  {
+    rating: <FiveStarIcon />,
+    name: "James L.",
+    icon: <GreenCheckedIcon />,
+    description:
+      "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”",
+  },
+];
+
+export const FOOTER_SOCAL_MEDIA_LIST = [
+  {
+    icon: (
+      <TwitterIcon myClass="group-hover:fill-white transtition-all duration-300" />
+    ),
+    link: "https://x.com/?lang=en",
+  },
+  {
+    icon: (
+      <FacebookIcon myClass="group-hover:fill-white transtition-all duration-300" />
+    ),
+    link: "https://x.com/?lang=en",
+  },
+  {
+    icon: (
+      <InstagramIcon myClass="group-hover:fill-white transtition-all duration-300" />
+    ),
+    link: "https://x.com/?lang=en",
+  },
+  {
+    icon: (
+      <GithubIcon myClass="group-hover:fill-white transtition-all duration-300" />
+    ),
+    link: "https://x.com/?lang=en",
+  },
+];
+
 export const FOOTER_LIST = [
   {
     title: "Company",
@@ -199,43 +282,96 @@ export const PAYMENTS_COMPANY_LIST = [
   },
 ];
 
-export const DETAILS_TABS_LIST = ["Product Details", "Rating & Reviews", "FAQs"];
+export const DETAILS_TABS_LIST = [
+  "Product Details",
+  "Rating & Reviews",
+  "FAQs",
+];
 
 export const USER_REVIEWS_LIST = [
   {
-    
+    rating: <FourHalfStarIcon />,
     userName: "Samantha D.",
-    description: "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
+    description:
+      "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
     uploadDate: "Posted on August 14, 2023",
   },
   {
-  
+    rating: <FourStarIcon />,
     userName: "Alex M.",
-    description: "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+    description:
+      "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
     uploadDate: "Posted on August 15, 2023",
   },
   {
-    
+    rating: <ThreeHalfStarIcon />,
     userName: "Ethan R.",
-    description:"This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
+    description:
+      "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
     uploadDate: "Posted on August 16, 2023",
   },
   {
-    
+    rating: <FourStarIcon />,
     userName: "Olivia P.",
-    description:"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
+    description:
+      "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.",
     uploadDate: "Posted on August 17, 2023",
   },
   {
-  
+    rating: <FourStarIcon />,
     userName: "Liam K.",
-    description:"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
+    description:
+      "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.",
     uploadDate: "Posted on August 18, 2023",
   },
   {
-    
+    rating: <FourHalfStarIcon />,
     userName: "Ava H.",
-    description:"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+    description:
+      "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
     uploadDate: "Posted on August 19, 2023",
+  },
+];
+
+export const SELECT_COLOR_LIST = ["brown", "green", "blue"];
+
+export const SELECT_SIZE_LIST = ["Small", "Medium", "Large", "X-Large"];
+
+export const ALSO_LIKE_LIST: ItemsList[] = [
+  {
+    image: "/assets/images/webp/also-like-first.webp",
+    title: "Polo eith Contrast Trims",
+    stars: <FourStarIcon />,
+    productRating: 4.0,
+    marketPrice: "$242",
+    sellingPrice: "$212",
+    discount: "-20",
+  },
+  {
+    image: "/assets/images/webp/also-like-second.webp",
+    title: "Cradient Graphic T-shirt",
+    stars: <ThreeHalfStarIcon />,
+    productRating: 3.5,
+    marketPrice: "",
+    sellingPrice: "$145",
+    discount: "",
+  },
+  {
+    image: "/assets/images/webp/also-like-third.webp",
+    title: "Polo with Tripping Details",
+    stars: <FourHalfStarIcon />,
+    productRating: 4.5,
+    marketPrice: "",
+    sellingPrice: "$180",
+    discount: "",
+  },
+  {
+    image: "/assets/images/webp/also-like-fourth.webp",
+    title: "Black Striped T-shirt",
+    stars: <FiveStarIcon />,
+    productRating: 5,
+    marketPrice: "$150",
+    sellingPrice: "$210",
+    discount: "-30",
   },
 ];

@@ -58,7 +58,7 @@ const Header = () => {
             </button>
             <Link
               href={"/"}
-              className="text-[32px] font-bold leading-[100%] max-md:text-[25.2px] font-intergal"
+              className="text-[32px] font-bold leading-[100%] max-md:text-[25.2px] font-integral"
               onClick={handleClose}
             >
               SHOP.CO

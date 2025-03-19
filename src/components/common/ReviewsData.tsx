@@ -54,7 +54,7 @@ const ReviewsData = () => {
               className="w-[49.19%] max-lg:w-full border border-black/10 rounded-[20px] py-7 px-8 max-sm:p-6 max-lg:px-7"
             >
               <div className="flex w-full justify-between items-center">
-                <span>{}</span>
+                <span>{item.rating}</span>
                 <span className="cursor-pointer flex">
                   <DotsIcon />
                 </span>

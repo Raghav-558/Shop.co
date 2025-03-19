@@ -5,6 +5,7 @@ import DressStyle from "@/components/home/DressStyle";
 import NewArrivals from "@/components/home/NewArrivals";
 import TopSelling from "@/components/home/TopSelling";
 import Hero from "@/components/home/Hero";
+import HappyCustomer from "@/components/home/HappyCustomers";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <NewArrivals />
       <TopSelling />
       <DressStyle />
-      <Footer />
+      <HappyCustomer/>
     </>
   );
 }

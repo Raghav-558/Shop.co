@@ -3,25 +3,25 @@
 @font-face {
   font-family: "IntegralCF";
   font-weight: 700;
-  src: url("/public/assets/fonts/integral-cf/Fontspring-DEMO-integralcf-bold.otf");
+  src: url("/assets/fonts/integral-cf/Fontspring-DEMO-integralcf-bold.otf");
 }
 
 @font-face {
   font-family: "Satoshi";
   font-weight: 400;
-  src: url("/public/assets/fonts/satoshi/Satoshi-Regular.otf");
+  src: url("/assets/fonts/satoshi/Satoshi-Regular.otf");
 }
 
 @font-face {
   font-family: "Satoshi";
   font-weight: 500;
-  src: url("/public/assets/fonts/satoshi/Satoshi-Regular.otf");
+  src: url("/assets/fonts/satoshi/Satoshi-Regular.otf");
 }
 
 @font-face {
   font-family: "Satoshi";
   font-weight: 700;
-  src: url("/public/assets/fonts/satoshi/Satoshi-Bold.otf");
+  src: url("/assets/fonts/satoshi/Satoshi-Bold.otf");
 }
 
 * {
@@ -34,6 +34,7 @@
 
 @theme {
   --color-custom-gray: #f0f0f0;
+  --color-custom-red: #ff3333;
 }
 
 .footer-icon:hover svg {

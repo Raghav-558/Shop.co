@@ -1,10 +1,10 @@
-import Brands from "@/components/Home/Brands";
+import Brands from "@/components/home/Brands";
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
-import DressStyle from "@/components/Home/DressStyle";
-import NewArrivals from "@/components/Home/NewArrivals";
-import TopSelling from "@/components/Home/TopSelling";
-import Hero from "@/components/Home/Hero";
+import DressStyle from "@/components/home/DressStyle";
+import NewArrivals from "@/components/home/NewArrivals";
+import TopSelling from "@/components/home/TopSelling";
+import Hero from "@/components/home/Hero";
 
 export default function Home() {
   return (

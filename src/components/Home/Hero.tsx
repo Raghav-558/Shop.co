@@ -14,7 +14,7 @@ const Hero = () => {
     onChange: (inView) => setCount(inView),
   });
   return (
-    <div className="bg-custom-gray">
+    <div className="bg-custom-gray overflow-hidden">
       <div className="max-w-[1240px] mx-auto max-xl:pl-4 max-lg:pl-0 pt-[103px] max-sm:pt-10 max-md:pt-20 max-lg:pt-24 lg:pb-[116px] relative">
         <div className="max-w-[577px] max-lg:px-4 max-lg:max-w-none relative z-20">
           <h1 className="font-intergal font-bold leading-[100%] text-[64px] max-lg:text-6xl max-md:text-5xl max-sm:text-4xl">
@@ -53,14 +53,38 @@ const Hero = () => {
             ))}
           </div>
         </div>
-
-        <Image
-          src={"/assets/images/webp/hero-image.webp"}
-          alt="hero-image"
-          width={672}
-          height={663}
-          className="pointer-events-none object-cover w-[672px] h-[663px] max-xl:w-[500px] max-sm:w-[390px] max-sm:h-[448px] max-xl:h-[530px] max-xl:right-3 lg:absolute right-0 bottom-0 z-10"
-        />
+        <div className="absolute bottom-[-281px] right-0 max-xl:bottom-0 max-lg:relative">
+          <div className="relative">
+            <Image
+              src="/assets/images/webp/small-star.webp"
+              alt="small-star"
+              width={56}
+              height={56}
+              className="absolute top-[32%] left-[40px] max-sm:top-[29%] max-sm:left-[25px] w-full max-w-[56px] max-md:max-w-11 pointer-events-none"
+            />
+            <Image
+              src="/assets/images/webp/big-star.webp"
+              alt="big-star"
+              width={104}
+              height={104}
+              className="absolute top-[12%] right-[10px] max-sm:right-[16px] max-sm:top-[7%] w-full max-w-[104px] max-md:max-w-[76px] pointer-events-none"
+            />
+            <Image
+              src="/assets/images/webp/infulencers-img.webp"
+              alt="infulencers-img"
+              width={655}
+              height={500}
+              className="w-full max-w-[655px] max-xl:max-w-[460px] max-lg:max-w-[555px] max-sm:hidden pointer-events-none"
+            />
+            <Image
+              src="/assets/images/webp/sm-infulencer-img.webp"
+              alt="infulencer"
+              width={655}
+              height={500}
+              className="w-full max-w-[655px] pointer-events-none max-sm:block sm:hidden"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

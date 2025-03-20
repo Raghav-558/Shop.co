@@ -1,56 +1,39 @@
+"use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import React, { useState } from "react";
 
-const ImageShow = () => {
+const ImageShow = ({ product }: { product: any }) => {
   const [selectedImage, setSelectedImage] = useState(
-    "/assets/images/webp/one-life-first.webp"
+    product?.product || "/assets/images/webp/tape-t-shirt.webp"
   );
 
+  const smallImages = [
+    product?.image,
+    "/assets/images/webp/black-striped-t-shirt.webp",
+    "/assets/images/webp/graphic-t-shirt.webp",
+  ].filter(Boolean);
+  useEffect(() => {
+    localStorage.setItem("selectedImage", selectedImage);
+  }, [selectedImage]);
+
   return (
-    <div className="flex gap-3.5">
-      <div className="flex flex-col gap-3.5">
-        <div
-          className="cursor-pointer rounded-[20px] overflow-hidden"
-          onClick={() =>
-            setSelectedImage("/assets/images/webp/one-life-first.webp")
-          }
-        >
-          <Image
-            src="/assets/images/webp/one-life-first.webp"
-            width={152}
-            height={167}
-            alt="Skinny Fit Jeans"
-            className="w-[152px] h-[167px] object-cover bg-custom-gray"
-          />
-        </div>
-        <div
-          className="cursor-pointer rounded-[20px] overflow-hidden"
-          onClick={() =>
-            setSelectedImage("/assets/images/webp/one-life-second.webp")
-          }
-        >
-          <Image
-            src="/assets/images/webp/one-life-second.webp"
-            width={152}
-            height={167}
-            alt="T-Shirt with Tape Details"
-            className="w-[152px] h-[167px] object-cover bg-custom-gray"
-          />
-        </div>
-        <div
-          className="cursor-pointer rounded-[20px] overflow-hidden"
-          onClick={() =>
-            setSelectedImage("/assets/images/webp/one-life-third.webp")
-          }
-        >
-          <Image
-            src="/assets/images/webp/one-life-third.webp"
-            width={152}
-            height={167}
-            alt="Vertical Striped Shirt"
-            className="w-[152px] h-[167px] object-cover bg-custom-gray"
-          />
-        </div>
+    <div className="flex gap-3.5 max-[1025px]:justify-center max-md:flex-col-reverse">
+      <div className="flex md:flex-col gap-3 md:gap-3.5">
+        {smallImages.map((img, index) => (
+          <div
+            key={index}
+            className="cursor-pointer rounded-[20px] overflow-hidden"
+            onClick={() => setSelectedImage(img)}
+          >
+            <Image
+              src={img}
+              width={152}
+              height={167}
+              alt={product?.title || "Product Image"}
+              className="md:w-[152px] w-[111px] rounded-[20px] h-[106px] md:h-[167px] object-cover bg-custom-gray"
+            />
+          </div>
+        ))}
       </div>
       <div className="rounded-[20px] bg-custom-gray overflow-hidden">
         <Image
@@ -58,7 +41,7 @@ const ImageShow = () => {
           width={444}
           height={530}
           alt="Selected Product"
-          className="w-[444px] h-[530px] object-cover"
+          className="md:w-[444px] w-full h-[290px] md:h-[530px] object-cover rounded-[20px]"
         />
       </div>
     </div>

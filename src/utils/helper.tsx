@@ -81,7 +81,7 @@ export const NEW_ARRIVALS_LIST: ItemsList[] = [
     title: "T-shirt with Tape Details",
     stars: <FourHalfStarIcon />,
     productRating: 4.5,
-    sellingPrice: "$120",
+    sellingPrice: "120",
     marketPrice: "",
     discount: "",
   },
@@ -90,8 +90,8 @@ export const NEW_ARRIVALS_LIST: ItemsList[] = [
     title: "Skinny Fit Jeans",
     stars: <ThreeHalfStarIcon />,
     productRating: 3.5,
-    sellingPrice: "$240",
-    marketPrice: "$260",
+    sellingPrice: "240",
+    marketPrice: "260",
     discount: "-20",
   },
   {
@@ -99,7 +99,7 @@ export const NEW_ARRIVALS_LIST: ItemsList[] = [
     title: "Checkered Shirt",
     stars: <FourHalfStarIcon />,
     productRating: 4.5,
-    sellingPrice: "$180",
+    sellingPrice: "180",
     marketPrice: "",
     discount: "",
   },
@@ -108,8 +108,8 @@ export const NEW_ARRIVALS_LIST: ItemsList[] = [
     title: "Sleeve Striped T-shirt",
     stars: <FourHalfStarIcon />,
     productRating: 4.5,
-    sellingPrice: "$130",
-    marketPrice: "$160",
+    sellingPrice: "130",
+    marketPrice: "160",
     discount: "-30",
   },
 ];
@@ -119,27 +119,27 @@ export const TOP_SELLING_LIST: ItemsList[] = [
     image: "/assets/images/webp/top-selling-first.webp",
     title: "Vertical Striped Shirt",
     stars: <FiveStarIcon />,
-    productRating: 5,
-    marketPrice: "$232",
-    sellingPrice: "$212",
+    productRating: 5.0,
+    marketPrice: "232",
+    sellingPrice: "212",
     discount: "-20",
   },
   {
     image: "/assets/images/webp/top-selling-second.webp",
     title: "Courage Graphic T-shirt",
     stars: <FourStarIcon />,
-    productRating: 4,
+    productRating: 4.0,
     marketPrice: "",
-    sellingPrice: "$145",
+    sellingPrice: "145",
     discount: "",
   },
   {
     image: "/assets/images/webp/top-selling-third.webp",
     title: "Loose Fit Bermuda Shorts",
     stars: <ThreeStarIcon />,
-    productRating: 3,
+    productRating: 3.0,
     marketPrice: "",
-    sellingPrice: "$80",
+    sellingPrice: "80",
     discount: "",
   },
   {
@@ -148,8 +148,47 @@ export const TOP_SELLING_LIST: ItemsList[] = [
     stars: <FourHalfStarIcon />,
     productRating: 4.5,
     marketPrice: "",
-    sellingPrice: "$210",
+    sellingPrice: "210",
     discount: "",
+  },
+];
+
+export const ALSO_LIKE_LIST: ItemsList[] = [
+  {
+    image: "/assets/images/webp/also-like-first.webp",
+    title: "Polo eith Contrast Trims",
+    stars: <FourStarIcon />,
+    productRating: 4.0,
+    marketPrice: "242",
+    sellingPrice: "212",
+    discount: "-20",
+  },
+  {
+    image: "/assets/images/webp/also-like-second.webp",
+    title: "Cradient Graphic T-shirt",
+    stars: <ThreeHalfStarIcon />,
+    productRating: 3.5,
+    marketPrice: "",
+    sellingPrice: "145",
+    discount: "",
+  },
+  {
+    image: "/assets/images/webp/also-like-third.webp",
+    title: "Polo with Tripping Details",
+    stars: <FourHalfStarIcon />,
+    productRating: 4.5,
+    marketPrice: "",
+    sellingPrice: "180",
+    discount: "",
+  },
+  {
+    image: "/assets/images/webp/also-like-fourth.webp",
+    title: "Black Striped T-shirt",
+    stars: <FiveStarIcon />,
+    productRating: 5,
+    marketPrice: "150",
+    sellingPrice: "210",
+    discount: "-30",
   },
 ];
 
@@ -333,45 +372,6 @@ export const USER_REVIEWS_LIST = [
   },
 ];
 
-export const SELECT_COLOR_LIST = ["brown", "green", "blue"];
+export const SELECT_COLOR = ["bg-dark-brown", "bg-dark-green", "bg-dark-blue"];
 
-export const SELECT_SIZE_LIST = ["Small", "Medium", "Large", "X-Large"];
-
-export const ALSO_LIKE_LIST: ItemsList[] = [
-  {
-    image: "/assets/images/webp/also-like-first.webp",
-    title: "Polo eith Contrast Trims",
-    stars: <FourStarIcon />,
-    productRating: 4.0,
-    marketPrice: "$242",
-    sellingPrice: "$212",
-    discount: "-20",
-  },
-  {
-    image: "/assets/images/webp/also-like-second.webp",
-    title: "Cradient Graphic T-shirt",
-    stars: <ThreeHalfStarIcon />,
-    productRating: 3.5,
-    marketPrice: "",
-    sellingPrice: "$145",
-    discount: "",
-  },
-  {
-    image: "/assets/images/webp/also-like-third.webp",
-    title: "Polo with Tripping Details",
-    stars: <FourHalfStarIcon />,
-    productRating: 4.5,
-    marketPrice: "",
-    sellingPrice: "$180",
-    discount: "",
-  },
-  {
-    image: "/assets/images/webp/also-like-fourth.webp",
-    title: "Black Striped T-shirt",
-    stars: <FiveStarIcon />,
-    productRating: 5,
-    marketPrice: "$150",
-    sellingPrice: "$210",
-    discount: "-30",
-  },
-];
+export const SELECT_SIZE = ["Small", "Medium", "Large", "X-Large"];

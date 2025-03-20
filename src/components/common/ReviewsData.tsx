@@ -23,7 +23,7 @@ const ReviewsData = () => {
   };
 
   return (
-    <div className="pt-8 pb-16 max-md:pb-[50px] max-md:pt-6">
+    <div className="pt-8 max-md:pt-6">
       <div className="max-w-[1272px] px-4 mx-auto">
         <div className="flex w-full items-center justify-between">
           <div className="flex gap-2 items-center justify-center">

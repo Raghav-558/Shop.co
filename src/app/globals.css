@@ -30,6 +30,7 @@
 
 .font-integral {
   font-family: "IntegralCF", "sans-serif";
+  font-variant-numeric: lining-nums proportional-nums;
 }
 
 @theme {
@@ -46,6 +47,18 @@
   box-shadow: 0px 4.48px 8.96px 0px #b7b7b714;
 }
 
-.footer-custom-bg{
-  background: linear-gradient(180deg, rgba(255,255,255,1) 15%, rgba(240,240,240,1) 15%);
+.footer-custom-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 15%,
+    rgba(240, 240, 240, 1) 15%
+  );
+}
+
+.happy-swiper .swiper-wrapper .swiper-slide{
+  filter: blur(4px);
+}
+
+.happy-swiper .swiper-wrapper .swiper-slide-active , .swiper-slide-next , .swiper-slide-prev{
+  filter: blur(0px) !important;
 }

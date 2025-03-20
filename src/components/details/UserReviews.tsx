@@ -23,7 +23,7 @@ const Reviews = () => {
           return (
             <div
               key={index}
-              className={`max-w-[414px] flex justify-center pb-5 border-b-2  relative w-full ${
+              className={`max-w-[414px] flex justify-center pb-5 border-b-2 relative w-full ${
                 isActive ? " border-black" : "border-transparent"
               }`}
             >

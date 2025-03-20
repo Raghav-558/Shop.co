@@ -6,7 +6,7 @@ import { TOP_SELLING_LIST } from "@/utils/helper";
 
 const TopSelling = () => {
   return (
-    <div className="pt-16 max-md:pt-10 pb-20 max-md:pb-[50px]">
+    <div className="pt-16 max-lg:pt-10 pb-20 max-lg:pb-[50px]">
       <div className="max-w-[1272px] px-4 mx-auto">
         <CustomHeading
           text="top selling"

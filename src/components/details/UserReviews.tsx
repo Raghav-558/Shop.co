@@ -10,7 +10,7 @@ const Reviews = () => {
   const tab = searchParams.get("tab") || "rating-and-reviews";
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 max-lg:pt-16 max-md:pt-[50px]">
       <div className="max-w-[1240px] flex mx-auto relative">
         <div className="w-full h-[1px] bg-black/10 absolute bottom-0"></div>
         {DETAILS_TABS_LIST.map((item, index) => {

@@ -10,7 +10,7 @@ const CustomButton = ({ text, myClass,arrow ,customOnClick }: CustomButtonProps)
   return (
     <button
       onClick={customOnClick}
-      className={`font-medium leading-[100%] cursor-pointer rounded-[62px] transition-all duration-300 border ${myClass}`}
+      className={`font-medium leading-[100%] cursor-pointer rounded-[62px] transition-all  duration-300 border ${myClass}`}
     >
       {text}
       {arrow && <span>{arrow}</span>}

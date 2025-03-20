@@ -24,7 +24,7 @@ const OrderDetails = ({
           </div>
           <div className="flex items-center justify-between">
             <p className="text-xl text-black/60">Discount (-20%)</p>
-            <p className="text-xl font-bold text-red">{"-$" + discount}</p>
+            <p className="text-xl font-bold text-custom-red">{"-$" + discount}</p>
           </div>
           <div className="flex items-center justify-between">
             <p className="text-xl text-black/60">Delivery Fee</p>
@@ -37,7 +37,7 @@ const OrderDetails = ({
           </div>
         </div>
         <form className="flex w-full items-center gap-3">
-          <div className="w-full bg-light-blue items-center flex gap-3  rounded-[62px] py-3 px-4">
+          <div className="w-full bg-custom-gray items-center flex gap-3  rounded-[62px] py-3 px-4">
             <PromoCodeIcon />
             <input
               type="text"
@@ -51,10 +51,10 @@ const OrderDetails = ({
           />
         </form>
         <button
-          className="gap-[14.63px] flex py-[19px] w-full justify-center items-center group bg-black text-white hover:bg-white hover:text-black font-medium"
+          className="gap-[14.63px] flex h-[60px] w-full justify-center items-center group border border-black rounded-[62px] bg-black text-white hover:bg-white hover:text-black font-medium"
           onClick={onClick}
         >
-          <ArrowIcon myClass="group-hover:fill-black" /> Go to Checkout
+          Go to Checkout <ArrowIcon myClass="group-hover:fill-black" />
         </button>
       </div>
     </div>

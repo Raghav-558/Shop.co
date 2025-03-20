@@ -4,7 +4,6 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import OrderDetails from "./OrderDetails";
 
-
 interface CartItem {
   id: string;
   title: string;
@@ -60,7 +59,7 @@ const Cart = () => {
                     } ${index === cartItems.length - 1 && "!pb-0"}`}
                     key={index}
                   >
-                    <div className="bg-light-blue rounded-[8.66px] overflow-hidden">
+                    <div className="bg-custom-gray rounded-[8.66px] overflow-hidden">
                       <Image
                         src={item.image}
                         width={124}
@@ -71,7 +70,6 @@ const Cart = () => {
                     <div className="flex flex-col w-full">
                       <div className="flex w-full justify-between">
                         <p className="text-xl font-bold leading-[100%]">
-                          {" "}
                           {item.title}
                         </p>
                         <button
@@ -81,26 +79,23 @@ const Cart = () => {
                           <DeleteIcon />
                         </button>
                       </div>
-                      <p className="text-sm leading-[100%] text-black">
-                        {" "}
+                      <p className="text-sm leading-[100%] text-black pt-0.5">
                         Size:{" "}
-                        <span className="text-gray mt-0.5">
+                        <span className="text-black/60">
                           {item.selectedSize}
                         </span>
                       </p>
-                      <p className="text-sm leading-[100%] text-black">
-                        {" "}
+                      <p className="text-sm leading-[100%] text-black pt-1">
                         Color:{" "}
-                        <span className="text-gray mt-1">
+                        <span className="text-black/60">
                           {item.selectedColor}
                         </span>
                       </p>
                       <div className="flex justify-between mt-1.5 items-baseline">
                         <p className="font-bold text-2xl leading-[100%]">
-                          {" "}
                           ${item.price * item.quantity}
                         </p>
-                        <div className="flex px-5 py-3 items-center gap-5 bg-light-blue rounded-[62px]">
+                        <div className="flex px-5 py-3 items-center gap-5 bg-custom-gray rounded-[62px]">
                           <button
                             onClick={() => handleQuantityChange(index, -1)}
                             className="flex cursor-pointer"

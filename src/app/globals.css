@@ -62,3 +62,15 @@
 .happy-swiper .swiper-wrapper .swiper-slide-active , .swiper-slide-next , .swiper-slide-prev{
   filter: blur(0px) !important;
 }
+
+.dark{
+  background-color: #4F4631;
+}
+
+.green{
+  background-color: #314F4A;
+}
+
+.blue{
+  background-color: #31344F;
+}

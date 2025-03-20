@@ -73,6 +73,7 @@ export interface ItemsList {
   sellingPrice: string;
   discount: string;
   marketPrice: string;
+  description: string;
 }
 
 export const NEW_ARRIVALS_LIST: ItemsList[] = [
@@ -84,6 +85,7 @@ export const NEW_ARRIVALS_LIST: ItemsList[] = [
     sellingPrice: "120",
     marketPrice: "",
     discount: "",
+    description:"This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
   },
   {
     image: "/assets/images/webp/new-arrivals-second.webp",
@@ -93,6 +95,8 @@ export const NEW_ARRIVALS_LIST: ItemsList[] = [
     sellingPrice: "240",
     marketPrice: "260",
     discount: "-20",
+    description:"This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+
   },
   {
     image: "/assets/images/webp/new-arrivals-third.webp",
@@ -102,6 +106,8 @@ export const NEW_ARRIVALS_LIST: ItemsList[] = [
     sellingPrice: "180",
     marketPrice: "",
     discount: "",
+    description:"This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+
   },
   {
     image: "/assets/images/webp/new-arrivals-fourth.webp",
@@ -111,6 +117,8 @@ export const NEW_ARRIVALS_LIST: ItemsList[] = [
     sellingPrice: "130",
     marketPrice: "160",
     discount: "-30",
+    description:"This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+
   },
 ];
 
@@ -123,6 +131,8 @@ export const TOP_SELLING_LIST: ItemsList[] = [
     marketPrice: "232",
     sellingPrice: "212",
     discount: "-20",
+    description:"This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+
   },
   {
     image: "/assets/images/webp/top-selling-second.webp",
@@ -132,6 +142,8 @@ export const TOP_SELLING_LIST: ItemsList[] = [
     marketPrice: "",
     sellingPrice: "145",
     discount: "",
+    description:"This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+
   },
   {
     image: "/assets/images/webp/top-selling-third.webp",
@@ -141,6 +153,8 @@ export const TOP_SELLING_LIST: ItemsList[] = [
     marketPrice: "",
     sellingPrice: "80",
     discount: "",
+    description:"This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+
   },
   {
     image: "/assets/images/webp/top-selling-fourth.webp",
@@ -150,6 +164,8 @@ export const TOP_SELLING_LIST: ItemsList[] = [
     marketPrice: "",
     sellingPrice: "210",
     discount: "",
+    description:"This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+
   },
 ];
 
@@ -162,6 +178,8 @@ export const ALSO_LIKE_LIST: ItemsList[] = [
     marketPrice: "242",
     sellingPrice: "212",
     discount: "-20",
+    description:
+      "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
   },
   {
     image: "/assets/images/webp/also-like-second.webp",
@@ -171,6 +189,8 @@ export const ALSO_LIKE_LIST: ItemsList[] = [
     marketPrice: "",
     sellingPrice: "145",
     discount: "",
+    description:
+      "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
   },
   {
     image: "/assets/images/webp/also-like-third.webp",
@@ -180,6 +200,8 @@ export const ALSO_LIKE_LIST: ItemsList[] = [
     marketPrice: "",
     sellingPrice: "180",
     discount: "",
+    description:
+      "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
   },
   {
     image: "/assets/images/webp/also-like-fourth.webp",
@@ -189,6 +211,8 @@ export const ALSO_LIKE_LIST: ItemsList[] = [
     marketPrice: "150",
     sellingPrice: "210",
     discount: "-30",
+    description:
+      "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
   },
 ];
 
@@ -372,6 +396,6 @@ export const USER_REVIEWS_LIST = [
   },
 ];
 
-export const SELECT_COLOR = ["bg-dark-brown", "bg-dark-green", "bg-dark-blue"];
+export const SELECT_COLOR = ["dark", "green", "blue"];
 
 export const SELECT_SIZE = ["Small", "Medium", "Large", "X-Large"];

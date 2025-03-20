@@ -4,13 +4,13 @@ import Image from "next/image";
 
 const ImageShow = ({ product }: { product: any }) => {
   const [selectedImage, setSelectedImage] = useState(
-    product?.product || "/assets/images/webp/tape-t-shirt.webp"
+    product?.image || "/assets/images/webp/tape-t-shirt.webp"
   );
 
   const smallImages = [
     product?.image,
-    "/assets/images/webp/black-striped-t-shirt.webp",
-    "/assets/images/webp/graphic-t-shirt.webp",
+    "/assets/images/webp/one-life-first.webp",
+    "/assets/images/webp/one-life-second.webp",
   ].filter(Boolean);
   useEffect(() => {
     localStorage.setItem("selectedImage", selectedImage);
@@ -35,12 +35,12 @@ const ImageShow = ({ product }: { product: any }) => {
           </div>
         ))}
       </div>
-      <div className="rounded-[20px] bg-custom-gray overflow-hidden">
+      <div className="rounded-[20px] overflow-hidden bg-custom-gray">
         <Image
           src={selectedImage}
           width={444}
           height={530}
-          alt="Selected Product"
+          alt="selected-images"
           className="md:w-[444px] w-full h-[290px] md:h-[530px] object-cover rounded-[20px]"
         />
       </div>

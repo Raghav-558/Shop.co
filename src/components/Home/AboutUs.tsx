@@ -41,8 +41,8 @@ const AboutUs = () => {
   };
 
   return (
-    <div>
-      <div className="max-w-[1240px] mx-auto rounded-[20px] flex max-lg:flex-col max-lg:justify-start max-lg:items-start max-lg:gap-8 items-center justify-between bg-black container py-[43px] px-[64px] max-sm:px-6 max-sm:py-8 max-md:px-7 max-md:py-10 max-lg:px-8">
+    <div className="px-4">
+      <div className="max-w-[1272px] mx-auto rounded-[20px] flex max-lg:flex-col max-lg:justify-start max-lg:items-start max-lg:gap-8 items-center justify-between bg-black container py-[43px] px-[64px] max-sm:px-6 max-sm:py-8 max-md:px-7 max-md:py-10 max-lg:px-8">
         <div className="max-w-[551px] max-lg:max-w-[unset]">
           <h3 className="text-white font-integral text-[40px] max-lg:text-4xl max-md:text-[32px] font-bold">
             STAY UP TO DATE ABOUT OUR LATEST OFFERS

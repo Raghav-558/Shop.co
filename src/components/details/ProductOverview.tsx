@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { PlusIcon, SelectIcon, SubtractIcon } from "@/utils/icons";
+import { PlusIcon, RoutingIcon, SelectIcon, SubtractIcon } from "@/utils/icons";
 import {
   ALSO_LIKE_LIST,
   NEW_ARRIVALS_LIST,
@@ -12,6 +12,7 @@ import { usePathname } from "next/navigation";
 import ImageShow from "./ImageShow";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 
 type CartItem = {
   title: string;
@@ -42,7 +43,7 @@ const ProductOverview = () => {
   const [activeColor, setActiveColor] = useState(0);
   const [activeSize, setActiveSize] = useState(0);
   const [quantity, setQuantity] = useState(1);
-  const [cart, setCart] = useState<CartItem[]>([]); // Define the type of cart
+  const [cart, setCart] = useState<CartItem[]>([]); 
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -88,7 +89,33 @@ const ProductOverview = () => {
   }
 
   return (
-    <div className="max-w-[1272px] px-4 mx-auto pt-[60px] md:pt-20">
+    <div className="max-w-[1272px] px-4 mx-auto">
+      <div className="border border-black/10"></div>
+      <div className="flex gap-3 max-sm:gap-1.5 items-center pb-9 pt-6 max-lg:py-5">
+        <Link
+          href={"/"}
+          className="flex gap-1 max-sm:text-sm text-black/60 items-center"
+        >
+          Home
+          <span>
+            <RoutingIcon />
+          </span>
+          Shop
+          <span>
+            <RoutingIcon />
+          </span>
+          Men
+          <span>
+            <RoutingIcon />
+          </span>
+        </Link>
+        <Link
+          href={"/cart"}
+          className="flex gap-1 max-sm:text-sm text-black items-center"
+        >
+          T-shirts
+        </Link>
+      </div>
       <div className="flex gap-10 max-lg:gap-6 max-[1025px]:flex-col max-lg:items-stretch max-xl:items-center">
         <ImageShow product={product} />
         <div className="max-w-[600px] w-full flex flex-col">
@@ -128,7 +155,7 @@ const ProductOverview = () => {
             {SELECT_COLOR.map((color, index) => (
               <button
                 key={index}
-                className={`size-[38px] cursor-pointer flex justify-center items-center rounded-full ${color}`}
+                className={`size-[37px] cursor-pointer flex justify-center items-center rounded-full ${color}`}
                 onClick={() => setActiveColor(index)}
               >
                 {index === activeColor && <SelectIcon />}
@@ -141,7 +168,7 @@ const ProductOverview = () => {
             {SELECT_SIZE.map((size, index) => (
               <button
                 key={index}
-                className={`cursor-pointer bg-custom-gray text-black/60 max-md:text-sm py-3 px-6 max-md:px-5 max-[385px]:!px-4 max-md:py-2.5 rounded-[62px] ${
+                className={`cursor-pointer bg-custom-gray text-black/60 max-md:text-sm py-[11px] px-6 max-md:px-5 max-[385px]:!px-4 max-md:py-2.5 rounded-[62px] ${
                   index === activeSize && "!bg-black text-white font-medium"
                 }`}
                 onClick={() => setActiveSize(index)}

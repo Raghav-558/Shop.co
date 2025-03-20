@@ -45,18 +45,18 @@ const CustomSwiper = ({ myMap }: SellItemsProps) => {
               <span className="flex items-center py-[8.26px] max-md:py-[4.20px] gap-[13px]">
                 <span>{item.stars}</span>
                 <p className="text-sm max-md:text-xs font-normal leading-[100%]">
-                  {item.productRating}/<span className="text-black/60">5</span>
+                  ${item.productRating}/<span className="text-black/60">5</span>
                 </p>
               </span>
               <span className="flex gap-2.5 max-md:gap-[5px] items-center">
                 <p className="font-bold text-2xl max-md:text-xl leading-[100%]">
-                  {item.sellingPrice}
+                  ${item.sellingPrice}
                 </p>
                 {item.marketPrice && (
                   <span className="w-max relative">
                     <span className="absolute top-[56%] w-full h-[1px] max-md:text-xl"></span>
                     <p className="relative max-md:text-xl text-black/40 text-2xl font-bold">
-                      {item.marketPrice}
+                      ${item.marketPrice}
                     </p>
                   </span>
                 )}

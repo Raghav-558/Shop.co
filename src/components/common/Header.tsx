@@ -11,6 +11,16 @@ import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [value, setValue] = useState(false);
+  const [cartLength, setCartLength] = useState(0);
+
+  useEffect(() => {
+    const storedCart = localStorage.getItem("cart");
+    if (storedCart) {
+      const cart = JSON.parse(storedCart);
+      setCartLength(cart.length);
+    }
+  }, []);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -58,7 +68,7 @@ const Header = () => {
             </button>
             <Link
               href={"/"}
-              className="text-[32px] font-bold leading-[100%] max-md:text-[25.2px] font-integral"
+              className="text-[32px] font-bold leading-[100%] max-md:text-[25.2px] font-integral sm:pb-2.5"
               onClick={handleClose}
             >
               SHOP.CO
@@ -122,8 +132,11 @@ const Header = () => {
               <SearchIconBlack />
             </div>
             <div>
-              <Link href={"/cart"} onClick={handleClose}>
+              <Link href={"/cart"} className="relative">
                 <CartIcon />
+                <span className=" absolute -top-5 -right-2.5 bg-custom-red rounded-full size-6 items-center justify-center flex text-sm text-white">
+                  {cartLength}
+                </span>
               </Link>
             </div>
           </div>
